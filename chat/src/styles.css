@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #131324; /* Background color similar to login page */
+    color: white; /* Text color */
+  }
+  
+  .chat-container {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .chat-box {
+    overflow-y: auto;
+  }
+  
+  .message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+  }
+  
+  .message.received {
+    background-color: #333; /* Background color for received messages */
+    align-self: flex-start;
+  }
+  
+  .message.sent {
+    background-color: #4e0eff; /* Background color for sent messages */
+    align-self: flex-end;
+  }
+  
+  .sender {
+    font-weight: bold;
+  }
+  
+  .timestamp {
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+  .input-box {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .input-box input {
+    flex: 1;
+    padding: 10px;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Light gray background color */
+    color: #333; /* Dark gray text color */
+    outline: none; /* Remove outline */
+    resize: none; /* Disable resizing */
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: auto; /* Automatically adjust height */
+  }
+  
+  
+  
+  
+  .input-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4e0eff; /* Background color for the send button */
+    color: white; /* Text color */
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
